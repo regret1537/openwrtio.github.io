@@ -192,12 +192,12 @@
 <h1 id="_1">刷机</h1>
 <p>在打造智能VPN路由器的过程中，会发现极路由官方固件不支持ipset，只能做到IP智能分流，无法实现域名智能分流。所以要寻找支持ipset的固件，进行刷机。本文以极路由2为例（极1s新版HC5661A尚没有固件）。</p>
 <h2 id="openwrt">下载OpenWrt开源固件</h2>
-<p>极路由的OpenWrt固件在这里下载：<a href="https://github.com/rssnsj/openwrt-hc5x61/releases">github.com</a> 或 <a href="http://downloads.openwrt.io/barrier_breaker/14.07/ramips/mt7620a/">本站镜像</a>，极2的型号为HC5761，所以下载<code>openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin</code>即可。</p>
+<p>极路由的OpenWrt固件在这里下载：<a href="https://github.com/rssnsj/openwrt-hc5x61/releases">github.com</a>，极2的型号为HC5761，所以下载<code>openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin</code>即可。</p>
 <h2 id="openwrt_1">路由器刷入OpenWrt</h2>
 <p>由于极路由本身已经是OpenWrt了，所以用sysupgrade直接刷机即可。</p>
 <pre><code>ssh root@192.168.199.1
 cd /tmp
-wget http://downloads.openwrt.io/barrier_breaker/14.07/ramips/mt7620a/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
+wget https://archive.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
 sysupgrade -F -n openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
 </code></pre>
 

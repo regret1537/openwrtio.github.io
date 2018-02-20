@@ -181,6 +181,8 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#openwrt">什么是OpenWrt？</a></li>
         <li class="main "><a href="#openwrt-news">Openwrt News 开源项目动态</a></li>
+            <li><a href="#20181openwrt-lede">2018年1月，OpenWrt 和 LEDE 合并</a></li>
+            <li><a href="#201710lede-17014">2017年10月，LEDE 17.01.4 发布</a></li>
             <li><a href="#20163openwrt-chaos-calmer-15051">2016年3月，OpenWrt Chaos Calmer 15.05.1 正式版发布</a></li>
             <li><a href="#20159openwrt-chaos-calmer-1505">2015年9月，OpenWrt Chaos Calmer 15.05 正式版发布</a></li>
             <li><a href="#201410openwrt-barrier-breaker-1407">2014年10月，OpenWrt Barrier Breaker 14.07 正式版发布</a></li>
@@ -206,8 +208,20 @@
 <p>OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… > <a href="./docs/beginners-guide/">新手指南</a></p>
 <p>> <a href="./docs/supported-devices/">支持的硬件</a></p>
 <h2 id="openwrt-news">Openwrt News 开源项目动态</h2>
+<h3 id="20181openwrt-lede">2018年1月，OpenWrt 和 LEDE 合并</h3>
+<p>合并后的项目名称仍然为 OpenWrt，而使用LEDE项目代码，根据<a href="https://openwrt.org/rules">LEDE制定的规范</a>进行管理，抛弃OpenWrt代码，OpenWrt CC 15.05将获得有限的安全性和错误修复，而更旧的版本不再维护。</p>
+<p>LEDE官网 <a href="https://lede-project.org/">lede-project.org</a> 已跳转至 <a href="https://openwrt.org/">openwrt.org</a>。</p>
+<h3 id="201710lede-17014">2017年10月，LEDE 17.01.4 发布</h3>
+<p><a href="https://downloads.openwrt.org/releases/17.01.4/">https://downloads.openwrt.org/releases/17.01.4/</a></p>
+<ul>
+<li>Linux内核更新至4.4.92（v17.01.3中为4.4.89）</li>
+<li>安全修复了brcmfmac，hostapd，mac80211，toolchain/gdb和Linux内核</li>
+<li>介绍最新版本的Wireguard VPN软件（0.0.20171017）</li>
+<li>修复x86/generic子目标中的Xen支持，在x86/64子目标中添加Xen支持</li>
+<li>针对ar71xx，bcm53xx，ramips和x86各种平台的修复</li>
+</ul>
 <h3 id="20163openwrt-chaos-calmer-15051">2016年3月，OpenWrt Chaos Calmer 15.05.1 正式版发布</h3>
-<p><a href="http://downloads.openwrt.io/chaos_calmer/15.05.1/">http://downloads.openwrt.io/chaos_calmer/15.05.1/</a></p>
+<p><a href="http://archive.openwrt.org/chaos_calmer/15.05.1/">https://archive.openwrt.org/chaos_calmer/15.05.1/</a></p>
 <ul>
 <li>Linux kernel updated to version 3.18</li>
 <li>Support for new devices:<ul>
@@ -224,7 +238,7 @@
 </li>
 </ul>
 <h3 id="20159openwrt-chaos-calmer-1505">2015年9月，OpenWrt Chaos Calmer 15.05 正式版发布</h3>
-<p><a href="http://downloads.openwrt.io/chaos_calmer/15.05/">http://downloads.openwrt.io/chaos_calmer/15.05/</a></p>
+<p><a href="https://archive.openwrt.org/chaos_calmer/15.05/">https://archive.openwrt.org/chaos_calmer/15.05/</a></p>
 <ul>
 <li>Linux kernel updated to version 3.18</li>
 <li>Improved Security Features</li>
@@ -351,5 +365,5 @@
 
 <!--
 MkDocs version : 0.17.2
-Build Date UTC : 2018-02-14 06:17:02
+Build Date UTC : 2018-02-20 15:33:37
 -->
